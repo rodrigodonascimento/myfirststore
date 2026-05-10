@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
+      "rich-text#grow-dev-title",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
@@ -13,6 +14,12 @@
       "rich-text#link",
       "newsletter"
     ]
+  },
+  "rich-text#grow-dev-title": {
+    "props": {
+      "text": "## Grow your development skills with VTEX IO",
+      "blockClass": "grow-dev-title"
+    }
   },
 
   "list-context.image-list#demo": {
@@ -90,7 +97,7 @@
 
   "rich-text#question": {
     "props": {
-      "text": "**Esse é an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
