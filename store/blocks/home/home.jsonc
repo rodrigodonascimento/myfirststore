@@ -2,63 +2,22 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      "flex-layout.row#example-home",
-      "rich-text#grow-dev-title",
+      "flex-layout.row#shelf-products",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
     ]
   },
-
-  "flex-layout.row#example-home": {
-    "children": [
-      "flex-layout.col#example-home-col1",
-      "flex-layout.col#example-home-col2"
-    ]
-  },
-
-  "flex-layout.col#example-home-col1": {
-    "children": ["rich-text#example-home-col1"],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-
-  "flex-layout.col#example-home-col2": {
-    "children": ["rich-text#example-home-col2"],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-
-  "rich-text#example-home-col1": {
-    "props": {
-      "text": "Exemplo coluna 1"
-    }
-  },
-
-  "rich-text#example-home-col2": {
-    "props": {
-      "text": "Exemplo coluna 2"
-    }
-  },
-
-  "rich-text#grow-dev-title": {
-    "props": {
-      "text": "## Grow your development skills with VTEX IO",
-      "blockClass": "grow-dev-title"
-    }
-  },
-
   "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+    "children": [
+      "slider-layout#demo-images"
+    ],
     "props": {
       "height": 570,
       "preload": true,
@@ -86,36 +45,43 @@
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
     "props": {
       "text": "## Summer",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+  "flex-layout.row#shelf-products": {
+    "children": [
+      "flex-layout.col#product1"
+    ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "blockClass": "products",
+      "fullWidth": true
     }
   },
-  "slider-layout#demo-products": {
+  "flex-layout.col#product1": {
+    "children": [
+      "rich-text#product-title",
+      "image#product1"
+    ],
     "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "horizontalAlign": "center"
     }
   },
-
+  "rich-text#product-title": {
+    "props": {
+      "text": "## Laptop",
+      "textAlignment": "CENTER",
+      "blockClass": "product-title"
+    }
+  },
+  "image#product1": {
+    "props": {
+      "src": "https://partnersigrowdev.vtexassets.com/assets/vtex.file-manager-graphql/images/b771c489-eb7b-482e-8e44-ea8e084712e3___0b1986526e995540d980c01548e2a50b.png",
+      "maxHeight": 300
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -129,14 +95,12 @@
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "**This is an exemplo store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
