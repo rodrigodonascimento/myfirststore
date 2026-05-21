@@ -1,0 +1,9 @@
+{
+  "rich-text#home": {
+    "title": "Texto Question",
+    "props": {
+      "text": "**Grow Dev Store**",
+      "blockClass": "title-store-home"
+    }
+  }
+}

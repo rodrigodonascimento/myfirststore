@@ -1,16 +1,16 @@
 {
-  "sticky-layout#buy-button": {
-    "props": {
-      "position": "bottom"
-    },
-    "children": ["flex-layout.row#buy-button"]
-  },
-  "product-assembly-options": {
-    "children": [
-      "flex-layout.row#product-assembly-options",
-      "assembly-option-input-values"
-    ]
-  },
+  // "sticky-layout#buy-button": {
+  //   "props": {
+  //     "position": "bottom"
+  //   },
+  //   "children": ["flex-layout.row#buy-button"]
+  // },
+  // "product-assembly-options": {
+  //   "children": [
+  //     "flex-layout.row#product-assembly-options",
+  //     "assembly-option-input-values"
+  //   ]
+  // },
   "assembly-option-input-values": {
     "props": {
       "optionsDisplay": "box"

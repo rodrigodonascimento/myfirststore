@@ -1,5 +1,5 @@
 {
-  "vtex.menu@2.x:menu#websites": {
+  "vtex.menu@2.x:menu#top-bar": {
     "children": [
       "menu-item#shop",
       "menu-item#about-us"
@@ -20,23 +20,23 @@
       }
     }
   },
-  "vtex.menu@2.x:menu#institutional": {
+  "vtex.menu@2.x:menu#institucional": {
     "children": [
       "menu-item#vtex-website"
     ]
   },
   "menu-item#vtex-website": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-vtex-webiste",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "https://vtex.com",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "Vtex Site",
+        "text": "Vtex Site"
       }
     }
   }

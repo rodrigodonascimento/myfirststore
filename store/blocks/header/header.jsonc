@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -12,14 +18,12 @@
       "sticky-layout#4-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
     }
   },
-  
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -29,9 +33,9 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
+      "vtex.menu@2.x:menu#top-bar",
       "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "vtex.menu@2.x:menu#institucional"
     ]
   },
   "flex-layout.col#spacer": {
@@ -86,7 +90,9 @@
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
     "children": ["flex-layout.row#1-mobile"]
@@ -109,10 +115,9 @@
   "drawer": {
     "children": ["menu#drawer"]
   },
-
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
+      "menu-item#category-smartphones",
       "menu-item#category-home",
       "menu-item#more"
     ],
@@ -120,7 +125,6 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
