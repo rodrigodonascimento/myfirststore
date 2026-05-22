@@ -3,6 +3,7 @@
     "blocks": [
       "list-context.image-list#main-banner",
       "flex-layout.row#deals",
+      "growdev-custom-app",
       "__fold__",
       "info-card#home",
       // "rich-text#shelf-title",
@@ -10,5 +11,10 @@
       "rich-text#home",
       "newsletter"
     ]
+  },
+  "growdev-custom-app": {
+    "props": {
+      "name": "Rodrigo"
+    }
   }
 }
